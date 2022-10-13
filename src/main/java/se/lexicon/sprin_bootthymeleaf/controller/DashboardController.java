@@ -3,7 +3,7 @@ package se.lexicon.sprin_bootthymeleaf.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+
 
 import java.time.LocalDate;
 
@@ -17,7 +17,6 @@ public class DashboardController {
 
         LocalDate currentDate = LocalDate.now();
         model.addAttribute("serverDate", currentDate);
-
         model.addAttribute("productListSize", 65);
         model.addAttribute("categoryListSize", 25);
         model.addAttribute("userListSize", 25);
